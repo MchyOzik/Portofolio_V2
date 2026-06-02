@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Work - Portofolio M. Choirul Rozikin</title>
+  <meta name="description" content="Kumpulan modul dan karya M. Choirul Rozikin meliputi MTCNA, Debian 12, dan CCNA.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <div class="brand">@Mchy<span>Ozik</span></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="experience.html">Skills</a></li>
+        <li><a href="work.html" class="active">My Work</a></li>
+        <li><a href="certificate.html">Certificate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MY WORK -->
+  <section class="section">
+    <h1>MY_WORK.log</h1>
+
+    <div class="gallery">
+      <div class="gallery-item" onclick="openBook('https://drive.google.com/file/d/1HPAgF8BXjTRK3TUIHDef1jREsG-cnSVe/view?usp=sharing')">
+        <img src="img/mtcna.jpg" alt="Buku MTCNA">
+        <p class="caption">Module MTCNA</p>
+      </div>
+      <div class="gallery-item" onclick="openBook('https://drive.google.com/file/d/10x9a-lVJXAA-tV856bQFnOKLbJR6QcJi/view?usp=sharing')">
+        <img src="img/debian.png" alt="Buku Debian 12">
+        <p class="caption">Module Debian 12</p>
+      </div>
+      <div class="gallery-item" onclick="openBook('https://drive.google.com/file/d/1EGETz-MRtl9WW_1fngtXspYTBiCL-ZMW/view?usp=drive_link')">
+        <img src="img/ccna.png" alt="Buku CCNA">
+        <p class="caption">Module CCNA</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function openBook(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 MchyOzik — All Rights Reserved</p>
+      <div class="social-links">
+        <a href="https://wa.me/6285790201784" target="_blank" title="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/mchyozikk/" target="_blank" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@MchyOzik17" target="_blank" title="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://github.com/MchyOzik/" target="_blank" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

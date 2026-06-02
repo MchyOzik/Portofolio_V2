@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Portofolio M. Choirul Rozikin</title>
+  <meta name="description" content="Portofolio M. Choirul Rozikin — Network & System Admin, siswa TKJ SMKN 1 Nglegok yang fokus pada administrasi jaringan, server, dan cyber security.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="brand">@Mchy<span>Ozik</span></div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="experience.html">Skills</a></li>
+        <li><a href="work.html">My Work</a></li>
+        <li><a href="certificate.html">Certificate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="content">
+
+      <!-- System Info Sidebar -->
+      <div class="system-info">
+        <div class="info-title">
+          <span class="status-dot"></span>
+          <span>SYSTEM_PROFILE.sys</span>
+        </div>
+        
+        <div class="bio-section">
+          <h3>[ IDENTITY ]</h3>
+          <p><strong>NAME:</strong> M. Choirul Rozikin</p>
+          <p><strong>ALIAS:</strong> MchyOzik</p>
+          <p><strong>ROLE:</strong> Network & System Admin</p>
+          <p><strong>NODE:</strong> SMKN 1 Nglegok (TKJ)</p>
+        </div>
+
+        <div class="bio-section">
+          <h3>[ ABOUT_ME.txt ]</h3>
+          <p>Seorang antusias teknologi di bidang teknik komputer dan jaringan (TKJ). Fokus pada administrasi jaringan, manajemen server, dan cyber security.</p>
+        </div>
+
+        <!-- Telemetry & Live Monitor -->
+        <div class="telemetry-grid">
+          <div class="telemetry-item">
+            <div class="telemetry-label">
+              <span>CPU Load</span>
+              <span>42%</span>
+            </div>
+            <div class="telemetry-bar-bg">
+              <div class="telemetry-bar-fill"></div>
+            </div>
+          </div>
+          <div class="telemetry-item">
+            <div class="telemetry-label">
+              <span>Memory Usage</span>
+              <span>67%</span>
+            </div>
+            <div class="telemetry-bar-bg">
+              <div class="telemetry-bar-fill"></div>
+            </div>
+          </div>
+          <div class="telemetry-item">
+            <div class="telemetry-label">
+              <span>Threat Level</span>
+              <span>MINIMAL</span>
+            </div>
+            <div class="telemetry-bar-bg">
+              <div class="telemetry-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Live console logs -->
+        <div class="terminal-output" id="sidebar-logs">
+          <div>> INITIALIZING MONITOR... [OK]</div>
+          <div>> WAITING FOR USER INPUT...</div>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="terminal-header">
+          <span class="loc-badge">NODE: KEDAWUNG_ID // SMKN1NGL</span>
+          <span class="net-badge"><span class="status-pulse"></span> SECURE_CON</span>
+        </div>
+        <h1>
+          SYSTEM BREACHED_
+        </h1>
+        <h2>
+          <span>I SEE YOU LOOKING.</span>
+        </h2>
+        <p>
+          <span id="typewriter"></span><span class="typing-cursor"></span>
+        </p>
+
+        <!-- Tombol Download CV -->
+        <div style="margin-top: 25px;">
+          <a href="MchyOzik CV.pdf" class="btn" download="My-CV.pdf">EXTRACT_DATA.exe</a>
+        </div>
+
+        <div class="signature">M. Choirul Rozikin</div>
+      </div>
+
+      <!-- Foto Profil -->
+      <div class="photo">
+        <img src="img/rozikin.png" alt="Foto M. Choirul Rozikin">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 MchyOzik — All Rights Reserved</p>
+      <div class="social-links">
+        <a href="https://wa.me/6285790201784" target="_blank" title="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/mchyozikk/" target="_blank" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@MchyOzik17" target="_blank" title="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://github.com/MchyOzik/" target="_blank" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script>
+  // Typing Effect
+  const textArray = [
+    "I am M. Choirul Rozikin.",
+    "I control the networks.",
+    "Your connection is not secure...",
+    "Welcome to my domain.",
+    "All your data are belong to me.",
+    "Extracting passwords... [OK]",
+    "Uploading malware... 99%"
+  ];
+  let textIndex = 0;
+  let charIndex = 0;
+  const typewriterElement = document.getElementById("typewriter");
+
+  function type() {
+    if (charIndex < textArray[textIndex].length) {
+      typewriterElement.textContent += textArray[textIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, 100);
+    } else {
+      setTimeout(erase, 2000); // Wait 2 seconds before erasing
+    }
+  }
+
+  function erase() {
+    if (charIndex > 0) {
+      typewriterElement.textContent = textArray[textIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(erase, 50);
+    } else {
+      textIndex++;
+      if (textIndex >= textArray.length) textIndex = 0;
+      setTimeout(type, 500);
+    }
+  }
+
+  // Start typing
+  setTimeout(type, 1000);
+
+  // Fake Terminal Logs in the sidebar
+  const logContainer = document.getElementById("sidebar-logs");
+  const logMessages = [
+    "SCANNING PORT 80...",
+    "ESTABLISHING VPN TUNNEL...",
+    "LOAD BALANCING IN PROGRESS...",
+    "MTCNA PROTOCOL ACTIVE...",
+    "FIREWALL ROUTING: OK",
+    "DEBIAN SERVER ONLINE",
+    "CCNA RULESET APPLIED",
+    "IP SPOOFING ATTEMPT BLOCKED",
+    "THREAT LEVEL: LOW",
+    "CPU TEMPERATURE: 42°C",
+    "ROUTING PACKET RECEIVED",
+    "ACCESS GRANTED TO PORTFOLIO",
+    "BACKUP SEQUENCE STAGED"
+  ];
+
+  function addSidebarLog() {
+    if (!logContainer) return;
+    const randomMsg = logMessages[Math.floor(Math.random() * logMessages.length)];
+    const logLine = document.createElement("div");
+    logLine.textContent = `> ${randomMsg}`;
+    logContainer.appendChild(logLine);
+    
+    // Keep only last 5 lines to prevent overflow
+    while (logContainer.childNodes.length > 5) {
+      logContainer.removeChild(logContainer.firstChild);
+    }
+    
+    // Auto scroll to bottom
+    logContainer.scrollTop = logContainer.scrollHeight;
+    
+    // Call again after random time
+    setTimeout(addSidebarLog, Math.random() * 1500 + 800);
+  }
+  // Start sidebar logs
+  setTimeout(addSidebarLog, 1500);
+</script>
+
+</html>
