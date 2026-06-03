@@ -11,4 +11,7 @@ $ docker build -t web1{docker} .
 $ docker run -d -p 8080:80 web1
 
 docker container ls
+ctrl + f untuk mencari mengganti warna
+yang dicari adalah h1
+
 
